@@ -1,0 +1,12 @@
+<form class="search-form" (submit)="$event.preventDefault()">
+  <label for="brand">Brand</label>
+  <input id="brand" type="text" placeholder="Sample : BMW" #brandInput>
+  <button type="button" (click)="searchAutoList(brandInput.value)">Search</button>
+</form>
+
+<ul class="auto-list">
+  <li *ngFor="let auto of result">
+    <strong>{{ auto.model }}</strong>
+    <button type="button" class="view-btn" (click)="selectedAuto(auto)">View more...</button>
+  </li>
+</ul>

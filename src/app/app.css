@@ -1,0 +1,6 @@
+.details { display: flex; align-items: center; gap: 30px; margin-left: 10px; }
+.specs { width: 200px; }
+.specs h4 { color: #2a9fb8; margin: 10px 0 0; padding-bottom: 4px; border-bottom: 2px solid #2a9fb8; }
+.specs p { text-align: right; margin: 6px 0; }
+.specs .units { border-top: 2px solid #2a9fb8; padding-top: 6px; }
+.details img { width: 300px; }
